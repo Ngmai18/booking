@@ -1,0 +1,135 @@
+.bannerFilm{
+  position: relative;
+  z-index: 1;
+}
+.bannerImage{
+    width: 100%;
+    height: 750px;
+}
+.bannerStyle{
+  position: relative;
+}
+.backgroundLinear {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#000,transparent 20%);
+  top: 0;
+}
+.formFindFilm{
+    max-width: 940px;
+    margin: auto;
+    height: 83px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #DAD2B4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 / 30%);
+    align-items: center;
+}
+.selectFilmAndDate{
+    text-align: center;
+    transform: translateY(55%);
+    /* position: relative; */
+}
+.BtnArrow{
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 40px;
+  width: 50px;
+  height: 100px;
+  color: #d8d8d8 !important;
+  cursor: pointer;
+  transition: pointer;
+}
+.BtnArrow:hover{
+  color: #fb4226 !important;
+}
+/* Dots */
+.slickdotsbanner {
+    position: absolute;
+    bottom: 12%;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+  }
+  .slickdotsbanner li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  .slickdotsbanner li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .slickdotsbanner li button:hover,
+  .slickdotsbanner li button:focus {
+    outline: none;
+  }
+  .slickdotsbanner li button:hover:before,
+  .slickdotsbanner li button:focus:before {
+    opacity: 1;
+  }
+  .slickdotsbanner li button:before {
+    font-family: "slick";
+    /* độ lớn của dot */
+    font-size: 12px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: "•";
+    text-align: center;
+    /* trước và sau khi hover luôn cùng opacity */
+    opacity: 1;
+    color: #d8d8d8;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slickdotsbanner li.slick-active button:before {
+    opacity: 0.75;
+    /* màu sắc của dot khi active */
+    color: #fb4226;
+  }
+  /* hover hiện button play */
+  .slick-slider:hover > .slick-list .slick-track .play {
+    opacity: 1;
+  }
